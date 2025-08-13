@@ -1,0 +1,74 @@
+:root {
+  --company-primary-color: #2DDD7F;
+  --primary-main: #2DDD7F;
+}
+
+/* Aplicar a cor da empresa em alguns elementos específicos */
+.MuiButton-containedPrimary {
+  background-color: var(--company-primary-color) !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: var(--company-primary-color) !important;
+}
+
+.MuiLinearProgress-colorPrimary .MuiLinearProgress-bar {
+  background-color: var(--company-primary-color) !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: var(--company-primary-color) !important;
+}
+
+.MuiRadio-colorPrimary.Mui-checked {
+  color: var(--company-primary-color) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: var(--company-primary-color) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+  background-color: var(--company-primary-color) !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: var(--company-primary-color) !important;
+}
+
+.MuiTabs-indicator {
+  background-color: var(--company-primary-color) !important;
+}
+
+/* Aplicar cor da empresa em botões do menu scroll */
+.MuiIconButton-colorPrimary {
+  color: var(--company-primary-color) !important;
+}
+
+.MuiButton-textPrimary {
+  color: var(--company-primary-color) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked .MuiSwitch-thumb {
+  color: var(--company-primary-color) !important;
+}
+
+/* Botões específicos do sistema */
+.chat-popover-button {
+  color: var(--company-primary-color) !important;
+}
+
+.show-all-button {
+  color: var(--company-primary-color) !important;
+}
+
+/* Menu scroll items */
+.MuiListItem-button:hover {
+  background-color: var(--company-primary-color) !important;
+  opacity: 0.1;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: var(--company-primary-color) !important;
+  opacity: 0.1;
+}
