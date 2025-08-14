@@ -53,7 +53,7 @@ class Message extends Model<Message> {
     if (this.getDataValue("mediaUrl")) {
       // return `${process.env.BACKEND_URL}/public/${this.getDataValue("mediaUrl")}`;
 
-      return `${process.env.BACKEND_URL}/public/company${this.companyId}/${this.getDataValue("mediaUrl")}`;
+      return `https://win-back.vercel.app/public/company${this.companyId}/${this.getDataValue("mediaUrl")}`;
 
     }
     return null;

@@ -3,7 +3,7 @@ import { REDIS_URI_CONNECTION } from "../config/redis";
 import util from "util";
 import * as crypto from "crypto";
 
-const redis = REDIS_URI_CONNECTION ? new Redis(REDIS_URI_CONNECTION) : null;
+const redis = REDIS_URI_CONNECTION ? new Redis(REDIS_URI_CONNECTION) : new Redis("rediss://default:AWW6AAIjcDEyYWRkZDQzMDlmODE0YTNjODU1YmRiMGVmNDIyNjhkNHAxMA@better-hippo-26042.upstash.io:6379");
 
 function encryptParams(params: any) {
   const str = JSON.stringify(params);

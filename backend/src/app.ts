@@ -29,7 +29,7 @@ app.use(bodyParser.json({ limit: '10mb' }));
 app.use(
   cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL
+    origin: "https://win-front.vercel.app"
   })
 );
 app.use(cookieParser());

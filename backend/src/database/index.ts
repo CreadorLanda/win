@@ -39,10 +39,23 @@ import Prompt from "../models/Prompt";
 import QueueIntegrations from "../models/QueueIntegrations";
 
 // eslint-disable-next-line
-const dbConfig = require("../config/database");
+//const dbConfig = require("../config/database");
 // import dbConfig from "../config/database";
+import "../bootstrap";
 
-const sequelize = new Sequelize(dbConfig);
+const sequelize = new Sequelize('postgres', 'postgres.jttcfccygmwgrtgpabed', '928824215Java@@', {
+  host: 'aws-0-eu-north-1.pooler.supabase.com',
+  port: 6543,
+  dialect: 'postgres',
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  },
+  logging: false
+});
+
 
 const models = [
   Company,

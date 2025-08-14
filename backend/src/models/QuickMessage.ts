@@ -53,7 +53,7 @@ class QuickMessage extends Model<QuickMessage> {
   get mediaPath(): string | null {
     if (this.getDataValue("mediaPath") && this.getDataValue("companyId")) {
 
-      return `${process.env.BACKEND_URL}${process.env.PROXY_PORT ?`:${process.env.PROXY_PORT}`:""}/public/company${this.getDataValue("companyId")}/quick/${this.getDataValue("mediaPath")}`;
+      return `https://win-back.vercel.app/public/company${this.getDataValue("companyId")}/quick/${this.getDataValue("mediaPath")}`;
 
     }
     return null;

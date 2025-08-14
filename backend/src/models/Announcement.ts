@@ -33,7 +33,7 @@ class Announcement extends Model<Announcement> {
   get mediaPath(): string | null {
     if (this.getDataValue("mediaPath")) {
       
-      return `${process.env.BACKEND_URL}${process.env.PROXY_PORT ?`:${process.env.PROXY_PORT}`:""}/public/announcements/${this.getDataValue("mediaPath")}`;
+      return `https://win-back.vercel.app/public/announcements/${this.getDataValue("mediaPath")}`;
 
     }
     return null;
