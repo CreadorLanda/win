@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "commonjs",
+    "rootDir": "./src",
     "outDir": "./dist",
     "strict": false,
     "strictPropertyInitialization": false,
@@ -10,7 +11,8 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-	"types": ["node"]
+    "types": ["node"]
   },
-    "exclude": ["public"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "public"]
 }

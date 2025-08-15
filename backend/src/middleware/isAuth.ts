@@ -24,14 +24,16 @@ const isAuth = (req: Request, res: Response, next: NextFunction): void => {
 
   try {
     const decoded = verify(token, authConfig.secret);
-    const { id, profile, companyId } = decoded as TokenPayload;
+    const { id, username, profile, companyId } = decoded as TokenPayload;
     req.user = {
       id,
+      username,
       profile,
       companyId
     };
   } catch (err) {
-    throw new AppError("Invalid token. We'll try to assign a new one on next request", 403 );
+    logger.error(`Token verification failed: ${err.message}`);
+    throw new AppError("ERR_SESSION_EXPIRED", 401);
   }
 
   return next();

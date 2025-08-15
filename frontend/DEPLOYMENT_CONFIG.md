@@ -5,7 +5,7 @@
 Para configurar a URL do backend no frontend, você precisa criar um arquivo `.env` na pasta `frontend/` com o seguinte conteúdo:
 
 ```bash
-REACT_APP_BACKEND_URL=https://win-back.vercel.app
+REACT_APP_BACKEND_URL=https://win-back-eu6j.onrender.com
 ```
 
 ## Passos para Configuração:
@@ -18,7 +18,7 @@ REACT_APP_BACKEND_URL=https://win-back.vercel.app
 
 2. **Editar o arquivo `.env`**:
    ```bash
-   REACT_APP_BACKEND_URL=https://win-back.vercel.app
+   REACT_APP_BACKEND_URL=https://win-back-eu6j.onrender.com
    ```
 
 3. **Build do projeto**:
@@ -42,7 +42,7 @@ REACT_APP_BACKEND_URL=https://win-back.vercel.app
 3. **Configurar variáveis de ambiente no Vercel**:
    - Acesse o dashboard do Vercel
    - Vá para Settings > Environment Variables
-   - Adicione: `REACT_APP_BACKEND_URL` = `https://win-back.vercel.app`
+   - Adicione: `REACT_APP_BACKEND_URL` = `https://win-back-eu6j.onrender.com`
 
 ## Arquivos que usam esta configuração:
 
